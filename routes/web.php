@@ -14,7 +14,8 @@ use App\Models\Page;
 */
 
 Route::get('/', function () {
-    dd(Page::find('first-page'));
+    // dd(Page::find('first-page'));
+    $pages = resource_path("pages");
     return view('pages');
 });
 //{page} is called wildcard constraint
